@@ -13,9 +13,7 @@ GraphicsSettings:
   m_LegacyDeferred:
     m_Mode: 0
     m_Shader: {fileID: 0}
-  m_AlwaysIncludedShaders:
-  - {fileID: 4800000, guid: d52a53d8a9bbb664fb31173bd7008ca7, type: 3}
-  - {fileID: 4800000, guid: faf51f983d2c76a42a4df09b8294e020, type: 3}
+  m_AlwaysIncludedShaders: []
   m_PreloadedShaders: []
   m_ShaderSettings:
     useScreenSpaceShadows: 1
