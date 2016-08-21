@@ -11,9 +11,10 @@
 *.js     text
 *.sql    text
 *.meta   text
+*.asset  text
 
-*.csproj text merge=union
-*.sln    text merge=union eol=crlf
+*.csproj text
+*.sln    text eol=crlf
 
 *.docx   diff=astextplain
 *.DOCX   diff=astextplain
