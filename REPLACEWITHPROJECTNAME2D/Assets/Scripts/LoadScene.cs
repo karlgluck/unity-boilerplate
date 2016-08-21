@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
@@ -8,6 +8,6 @@ public class LoadScene : MonoBehaviour
 
     void Start ()
     {
-        Application.LoadLevelAsync(this.levelName);
+        SceneManager.LoadSceneAsync(this.levelName);
 	}
 }
