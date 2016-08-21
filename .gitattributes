@@ -1,0 +1,42 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+
+*.cs     text diff=csharp
+*.java   text diff=java
+*.html   text diff=html
+*.css    text
+*.js     text
+*.sql    text
+*.meta   text
+*.asset  text
+
+*.csproj text
+*.sln    text eol=crlf
+
+*.docx   diff=astextplain
+*.DOCX   diff=astextplain
+
+# Truly binary: textures
+*.psd binary
+*.tiff? binary
+*.jpg binary
+*.tga binary
+*.png binary
+*.gif binary
+*.bmp binary
+*.iff binary
+*.pict binary
+
+# Truly binary: sounds
+*.wav binary
+*.ogg binary
+
+# Truly binary: meshes
+*.fbx binary
+*.dae binary
+*.3ds binary
+*.dxf binary
+*.obj binary
