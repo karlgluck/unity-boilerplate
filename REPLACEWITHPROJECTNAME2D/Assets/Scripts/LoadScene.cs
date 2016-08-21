@@ -4,10 +4,10 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     [UnityEngine.SerializeField]
-    private string levelName;
+    private string sceneName;
 
     void Start ()
     {
-        SceneManager.LoadSceneAsync(this.levelName);
+        SceneManager.LoadSceneAsync(this.sceneName);
 	}
 }
