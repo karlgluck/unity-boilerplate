@@ -2,6 +2,14 @@
 using System;
 using System.Reflection;
 
+// If you have dynamic dispatch methods named Handle and a main Run coroutine,
+// use this snippet in a monobehaviour to start the GameMachine:
+//
+// void Start ()
+// {
+//    this.StartCoroutine (GameMachine.Start (this.Run(), GameMachine.CreateDynamicDispatchDelegate (this, "Handle")));
+// }
+
 public sealed class GameMachine
 {
     private IEnumerator codePointer;
@@ -45,7 +53,7 @@ public sealed class GameMachine
             Code = code
         };
     }
-    
+
     IEnumerator run ()
     {
         while (codePointer.MoveNext())
@@ -105,33 +113,4 @@ public sealed class GameMachine
             return (IEnumerator)method.Invoke (target, new object[] { parameter });
         };
     }
-}
-
-public class GameMain
-{
-    public static IEnumerator Core (IEnumerator codePointer, Func<object, IEnumerator> dynamicDispatch)
-    {
-        while (codePointer.MoveNext())
-        {
-            object retval = codePointer.Current;
-            var delegateMethod = retval as Func<IEnumerator>;
-            if (delegateMethod != null)
-            {
-                codePointer = delegateMethod.Invoke();
-            }
-            else if (retval != null)
-            {
-                var queryCodePointer = (IEnumerator)dynamicDispatch (retval);
-                while (queryCodePointer.MoveNext())
-                {
-                    yield return queryCodePointer.Current;
-                }
-            }
-            else
-            {
-                yield return null;
-            }
-        }
-    }
-    
 }
