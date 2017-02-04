@@ -15,10 +15,10 @@ using UnityEngine.Scripting;
 // Examples:
 //      
 //	[Bind]
-//	public static Action<GameObject> AddToScene = BoundAction.Null;
+//	public static Action<object> AddToScene = BoundAction.Null;
 //
 //	[Bind]
-//	public static Func<string, GameObject> GetObjectByName = BoundFunc<object>.Null;
+//	public static Func<string, object> GetObjectByName = BoundFunc<object>.Null;
 //
 //	[Bind]
 //	public static Action<int,string,string> SomethingWithLongParameterList = BoundAction.Null;
