@@ -12,7 +12,7 @@ using UnityEngine;
 
 // Sample dynamic-dispatch code for these requests using the method "Handle"
 /*
-	IEnumerator Handle (EventQueue.WaitForEventTypeEnumerator request)
+	IEnumerator Handle (EventPipe.WaitForEventTypeEnumerator request)
 	{
 		while (request.MoveNext())
 		{
@@ -21,7 +21,7 @@ using UnityEngine;
 	}
 
 	
-	IEnumerator Handle (EventQueue.WaitForEventInTypeSetEnumerator request)
+	IEnumerator Handle (EventPipe.WaitForEventInTypeSetEnumerator request)
 	{
 		while (request.MoveNext())
 		{
@@ -29,7 +29,7 @@ using UnityEngine;
 		}
 	}
 	
-	IEnumerator Handle (EventQueue.WaitForTriggerOrEventTypeEnumerator request)
+	IEnumerator Handle (EventPipe.WaitForTriggerOrEventTypeEnumerator request)
 	{
 		while (request.MoveNext())
 		{
