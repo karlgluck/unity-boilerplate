@@ -1285,6 +1285,8 @@ namespace dotBunny.Unity
                 "\t\t\"**/*.unityproj\":true,\n" +
                 "\t\t\"**/*.dll\":true,\n" +
                 "\t\t\"**/*.exe\":true,\n" +
+                "\t\t\"**/*.sln\":true,\n" +
+                "\t\t\"**/*.csproj\":true,\n" +
 
                 // Media Files
                 "\t\t\"**/*.pdf\":true,\n" +

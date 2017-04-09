@@ -356,14 +356,14 @@ PlayerSettings:
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
   scriptingDefineSymbols: {}
-  metroPackageName: ominex
+  metroPackageName: REPLACEWITHPROJECTNAME2D
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: ominex
+  metroApplicationDescription: REPLACEWITHPROJECTDESCRIPTION
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 

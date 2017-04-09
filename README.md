@@ -1,3 +1,9 @@
-# Unity Boilerplate
+# Standard Unity
 
-This repo is meant to help me not have to deal with all the usual setup junk when I start new Unity projects. Your tastes may differ, so be aware that it's heavily customized.
+To use the Standard Unity extensions, copy and paste this whole folder somewhere under your `Assets/` directory. I put it in `Assets/Lib/`.
+
+To update, delete your copy of this folder and paste in the new version from this repository.
+
+# UnityProjectFolder
+
+Start here to grab useful stuff for a new project.
