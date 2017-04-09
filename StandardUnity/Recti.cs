@@ -98,7 +98,7 @@ public struct Recti
 #if DEBUG
         if (!this.IsSameSizeAs(other))
         {
-            throw new System.NotSupportedException("Don't use Recti.deltaTo with rects of different sizes");
+            throw new System.NotSupportedException("Don't use Recti.GetRectRegionsAdded with rects of different sizes");
         }
 #endif
 
