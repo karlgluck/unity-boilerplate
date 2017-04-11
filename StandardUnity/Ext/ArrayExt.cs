@@ -3,7 +3,7 @@ using System.Collections;
 
 public static partial class ArrayExt
 {
-    public static T Last (this T[] self)
+    public static T Last<T> (this T[] self)
     {
         return self.Length > 0 ? self[self.Length - 1] : default(T);
     }
