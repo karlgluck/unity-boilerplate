@@ -15,7 +15,7 @@ public static partial class ArrayExt
             int max = self.Length - 1;
             if (max >= 0)
             {
-                return array[i < 0 ? 0 : (i > max ? max : i)];
+                return self[i < 0 ? 0 : (i > max ? max : i)];
             }
         }
         return default(T);

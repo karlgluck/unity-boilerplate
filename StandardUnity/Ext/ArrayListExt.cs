@@ -25,7 +25,7 @@ public static partial class ArrayListExt
             int max = self.Count - 1;
             if (max >= 0)
             {
-                return array[i < 0 ? 0 : (i > max ? max : i)];
+                return self[i < 0 ? 0 : (i > max ? max : i)];
             }
         }
         return null;
